@@ -135,7 +135,9 @@ i:nth-child(5n + 5)
     }
     i:nth-child(5n + 3)
     {
-        background:#fff;
+        background-image: url('./img/logo.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
         border: 3px solid #ff0004;
     }
     i:nth-child(5n + 4)
