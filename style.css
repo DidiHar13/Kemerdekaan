@@ -58,6 +58,7 @@ i:nth-child(5n + 1)
 i:nth-child(5n + 2)
 {
     background:#ff0000;
+    border: 3px solid white;
 }
 i:nth-child(5n + 3)
 {
@@ -81,7 +82,7 @@ i:nth-child(5n + 5)
     height: 100vh;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 720px) {
     body
     {
         margin: 0;
@@ -113,47 +114,5 @@ i:nth-child(5n + 5)
         background: #000;
         border-radius: 50%;
         animation: animate 5s linear infinite;
-    }
-    @keyframes animate
-    {
-        0%
-        {
-            transform: translateY(calc(100vh + 350px));
-        }
-        100%
-        {
-            transform: translateY(-300px);
-        }
-    }
-    i:nth-child(5n + 1)
-    {
-        background-image: url('./img/logo.jpeg');
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    i:nth-child(5n + 2)
-    {
-        background:#ff0000;
-    }
-    i:nth-child(5n + 3)
-    {
-        background-image: url('./img/logo.jpeg');
-        background-size: cover;
-        background-attachment: fixed;
-        border: 3px solid #ff0004;
-    }
-    i:nth-child(5n + 4)
-    {
-        background-image: linear-gradient(
-            to bottom, red 0%, red 50%, white 50%, white 100%
-        );
-        height: 100vh;
-    }
-    i:nth-child(5n + 5)
-    {
-        background-image: linear-gradient(
-            to bottom, red 0%, red 50%, white 50%, white 100%
-        );
-        height: 100vh;
     }
 }
